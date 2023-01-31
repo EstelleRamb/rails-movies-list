@@ -5,4 +5,9 @@
         <%= link_to "+", list_path(list), data: { turbo_method: :delete, turbo_confirm: "Delete this category?" }, class: "card-remove-link" %>
     </div>
   <% end %>
+
+  <div class="card-category m-3 cards"
+       style="background-color: #986079">
+       <%= link_to "New list", new_list_path %>
+  </div>
 </div>
