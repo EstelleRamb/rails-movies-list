@@ -1,6 +1,10 @@
 
 <%= simple_form_for(list) do |f| %>
-  <%= f.input :name %>
-  <%= f.input :photo, as: :file %>
-  <%= f.submit %>
+  <div class="form-control formulaire">
+    <%= f.input :name %>
+    <%= f.input :photo, as: :file %>
+    <div class="form-actions button m-0">
+      <%= f.submit %>
+    </div>
+  </div>
 <% end %>
