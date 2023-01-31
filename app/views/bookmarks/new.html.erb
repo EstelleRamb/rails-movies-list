@@ -1,0 +1,11 @@
+<h1 class="title-form">Create a bookmark</h1>
+
+<%= simple_form_for ([@list, @bookmark]) do |f| %>
+  <div class="form-control formulaire">
+    <%= f.association :movie, label: "Movie" %>
+    <%= f.input :comment, label: "Add your comment"%>
+    <div class="form-actions button m-0">
+      <%= f.button :submit %>
+    </div>
+  </div>
+<% end %>
